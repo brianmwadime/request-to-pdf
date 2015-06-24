@@ -1,0 +1,3 @@
+#Hello World Request to pdf here
+
+<%= link_to(l(:label_request_pdf), { controller: :issues, action: :export_pdf, id: @issue.id }, class: 'icon icon-attachment in_link').html_safe %>
