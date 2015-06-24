@@ -7,6 +7,10 @@ Redmine::Plugin.register :request_to_pdf do
   url 'http://example.com/path/to/plugin'
   author_url 'http://brianmwadime.com'
 
+  requires_redmine :version_or_higher => '2.5.0'
+
+  #require redmine design requests plugin
+  requires_redmine_plugin :redmine_design_team_requests , :version_or_higher => '2.0'
 
   project_module :request_to_pdf do
     #permission :allow_export_pdf, :issues => :index
